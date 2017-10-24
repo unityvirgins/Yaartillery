@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHMUP-Arena", "SHMUP-Arena.csproj", "{77A24270-752B-34ED-0CD6-99CC20C53870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHMUP-Arena.Plugins", "SHMUP-Arena.Plugins.csproj", "{04B1E623-4F9E-11D6-A0EA-7D367E6F94BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHMUP-Arena.Editor", "SHMUP-Arena.Editor.csproj", "{BB1C60AD-7F60-3AF7-6607-81F0A66EC913}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77A24270-752B-34ED-0CD6-99CC20C53870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A24270-752B-34ED-0CD6-99CC20C53870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A24270-752B-34ED-0CD6-99CC20C53870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A24270-752B-34ED-0CD6-99CC20C53870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B1E623-4F9E-11D6-A0EA-7D367E6F94BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B1E623-4F9E-11D6-A0EA-7D367E6F94BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B1E623-4F9E-11D6-A0EA-7D367E6F94BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B1E623-4F9E-11D6-A0EA-7D367E6F94BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1C60AD-7F60-3AF7-6607-81F0A66EC913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1C60AD-7F60-3AF7-6607-81F0A66EC913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1C60AD-7F60-3AF7-6607-81F0A66EC913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1C60AD-7F60-3AF7-6607-81F0A66EC913}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

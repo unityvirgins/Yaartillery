@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e7c2ce5733fc3bf45bfab2ce1444d4c9
+timeCreated: 1508767912
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PiratesBay
+  fontNames:
+  - PiratesBay
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
