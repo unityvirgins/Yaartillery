@@ -455,7 +455,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1757283253
+  randomSeed: 714021243
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4168,7 +4168,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 436691371
+  randomSeed: -999581621
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7967,6 +7967,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1872d35114e0a1f448cd6b5b3e2f3540, type: 2}
+    - target: {fileID: 114708052389810252, guid: fc6a6d9263628a0439f69d5de7ddad4f,
+        type: 2}
+      propertyPath: theta
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
   m_IsPrefabParent: 0
@@ -8612,7 +8617,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -239047516
+  randomSeed: -1635644394
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -11938,7 +11943,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1820582287
+  randomSeed: -1512725431
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -15571,11 +15576,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047934b2bb7319141bcb8f50458e7046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyList: []
-  waveSizeList: 
-  waveAngles: []
+  enemyList:
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1901530060804696, guid: 9600ca5cb9090f1459ac4c24d3403565, type: 2}
+  - {fileID: 1901530060804696, guid: 9600ca5cb9090f1459ac4c24d3403565, type: 2}
+  - {fileID: 1901530060804696, guid: 9600ca5cb9090f1459ac4c24d3403565, type: 2}
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1901530060804696, guid: 9600ca5cb9090f1459ac4c24d3403565, type: 2}
+  - {fileID: 1496800463920446, guid: af3073bb27978124eb88d8460197ab64, type: 2}
+  - {fileID: 1901530060804696, guid: 9600ca5cb9090f1459ac4c24d3403565, type: 2}
+  waveSizeList: 03000000020000000300000004000000
+  waveAngles:
+  - 0
+  - 45
+  - 0
+  - 45
   initWait: 0
-  waitTime: 5
+  waitTime: 10
 --- !u!114 &1726663306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15583,7 +15604,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726663304}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dc89267c0c2979449439887a267ed2a, type: 3}
   m_Name: 
@@ -15847,6 +15868,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6de7e20f116a8414f9c179052cbfd34f, type: 2}
+    - target: {fileID: 114708052389810252, guid: fc6a6d9263628a0439f69d5de7ddad4f,
+        type: 2}
+      propertyPath: theta
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
   m_IsPrefabParent: 0

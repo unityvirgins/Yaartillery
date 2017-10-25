@@ -196,11 +196,7 @@ public class PlayerManager : MonoBehaviour {
 
     IEnumerator ChangeLvl()
     {
-
-        Debug.Log("looooooooooool");
-         //Application.LoadLevel(_lvl_name);
         yield return new WaitForSeconds(sec_after_death);
         SceneManager.LoadScene(_lvl_name);
-        //Debug.Log("lol");
     }
 }
