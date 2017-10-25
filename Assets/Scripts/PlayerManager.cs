@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour {
 
@@ -12,6 +13,10 @@ public class PlayerManager : MonoBehaviour {
     }
 
     public playerStats ps = new playerStats();
+    public Transform Death_player_Explosion;
+
+    private string _lvl_name;
+    public float sec_after_death;
 
     //public int fallBoundary = -20;
     //public int healthCheck = 3;
@@ -32,8 +37,10 @@ public class PlayerManager : MonoBehaviour {
         {
             PlayerPrefs.SetInt("life_" + this.transform.root.name, 0);
             GameManager.KillPlayer(this);
+            Vector3 v = new Vector3(0, 1, 0);
+            Instantiate(Death_player_Explosion, transform.position + v, transform.rotation);
             //PlayerPrefs.DeleteKey("point_"+this.transform.root.name);
-            
+
             /*point_indicator pi = GameObject.FindGameObjectWithTag("canvas1").GetComponent<point_indicator>();
             pi.setPoint(0);
             /*if (PlayerPrefs.GetInt("life_" + this.transform.root.name) == 0)
@@ -130,11 +137,13 @@ public class PlayerManager : MonoBehaviour {
                 if(r >= 5)
                 {
                     PlayerPrefs.DeleteAll();
-                    Application.LoadLevel("EndOfParty");
+                    _lvl_name = "EndOfParty";
+                    StartCoroutine(ChangeLvl());
                 }
                 else
                 {
-                    Application.LoadLevel("EndRound");
+                    _lvl_name = "EndRound";
+                    StartCoroutine(ChangeLvl());
                 }
             
         }
@@ -177,4 +186,14 @@ public class PlayerManager : MonoBehaviour {
             Debug.Log(" life is : " + healthCheck);
         }
     }*/
+
+    IEnumerator ChangeLvl()
+    {
+
+        Debug.Log("looooooooooool");
+         //Application.LoadLevel(_lvl_name);
+        yield return new WaitForSeconds(sec_after_death);
+        SceneManager.LoadScene(_lvl_name);
+        //Debug.Log("lol");
+    }
 }

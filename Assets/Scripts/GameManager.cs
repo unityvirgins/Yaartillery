@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager gm;
+    
+
 
     void Awake()
     {
@@ -78,7 +80,8 @@ public class GameManager : MonoBehaviour {
     public static void KillPlayer(PlayerManager player)
     {
         Debug.Log("mort de " + player.transform.root.name);
-        Destroy(player.gameObject);
+        MeshRenderer render = player.gameObject.GetComponentInChildren<MeshRenderer>();
+        render.enabled = false;
         //gm.StartCoroutine(gm.RespawnPlayer());
     }
 

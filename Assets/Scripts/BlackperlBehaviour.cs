@@ -29,7 +29,7 @@ public class BlackperlBehaviour : MonoBehaviour {
             }
     }
 
-    /*void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -38,13 +38,13 @@ public class BlackperlBehaviour : MonoBehaviour {
 
             _playerBehaviour.setCollide(true, dir);
         }
-
+        /*
         if (col.gameObject.tag == "obstacle")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
 
-        }
-    }*/
+        }*/
+    }
 
 }

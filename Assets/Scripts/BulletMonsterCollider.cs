@@ -35,7 +35,9 @@ public class BulletMonsterCollider : MonoBehaviour {
 
         if (col.gameObject.tag == "obstacle")
         {
-            Instantiate(_boxexplosion, transform);
+            Vector3 v =new Vector3(0, 1, 0);
+            Transform explosion = Instantiate(_boxexplosion, transform.position + v, transform.rotation);
+            explosion.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Destroy(col.gameObject);
             Destroy(gameObject);
 

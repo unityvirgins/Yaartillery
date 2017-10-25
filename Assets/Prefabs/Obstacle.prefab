@@ -21,10 +21,9 @@ GameObject:
   - component: {fileID: 224459620880470550}
   - component: {fileID: 54652447465373892}
   - component: {fileID: 136272101183009670}
+  - component: {fileID: 114086705458450754}
   - component: {fileID: 114092168402377428}
-  - component: {fileID: 114792581442205428}
-  - component: {fileID: 114970243601984322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle
   m_TagString: obstacle
   m_Icon: {fileID: 0}
@@ -41,7 +40,7 @@ GameObject:
   - component: {fileID: 4738102348158518}
   - component: {fileID: 33173568733797074}
   - component: {fileID: 23930112189440888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: barrel_open_b_rolling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,11 +111,22 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114086705458450754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085886095936980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8beeda30795c17f439530f361470e388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114092168402377428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,32 +142,6 @@ MonoBehaviour:
   initSpeed: 2
   initBehaviour: MoveInSpiral
   spiralIntensity: 0.5
---- !u!114 &114792581442205428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1085886095936980}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c360a263352fca499c50a18a9766a85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initDir: {x: 0, y: 0, z: 0}
-  initSpeed: 2
-  initBehaviour: MoveInSpiral
---- !u!114 &114970243601984322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1085886095936980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a15a93666d3e62d449279c52f0e5af4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _boxexplosion: {fileID: 0}
 --- !u!136 &136272101183009670
 CapsuleCollider:
   m_ObjectHideFlags: 1
