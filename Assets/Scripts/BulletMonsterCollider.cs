@@ -22,14 +22,14 @@ public class BulletMonsterCollider : MonoBehaviour {
     private void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.tag == "monstre")
+        if (col.gameObject.tag == "monster")
         {
 
             Vector3 v = new Vector3(0, 1, 0);
             Transform _blood = Instantiate(_bloodmonster, transform.position + v, transform.rotation);
             _blood.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Destroy(gameObject);
-            Destroy(col.gameObject.transform.root);
+            Destroy(col.gameObject.transform.root.gameObject);
         }
         if (col.gameObject.tag == "obstacle")
         {

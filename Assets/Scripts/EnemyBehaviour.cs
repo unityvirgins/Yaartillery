@@ -71,7 +71,7 @@ public class EnemyBehaviour : MonoBehaviour
             posZ = unit * Mathf.Sin(Time.time * freq + Mathf.Deg2Rad * initAngle);
             unit += Time.deltaTime;
 
-            transform.position = new Vector3(posX, 0.5f / initSpeed, posZ) * initSpeed;
+            transform.position = new Vector3(posX, 0.0f / initSpeed, posZ) * initSpeed;
 
             if (transform.position.x != 0 && transform.position.y != 0 && transform.position.z != 0)
             {
