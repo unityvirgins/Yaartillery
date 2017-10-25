@@ -125,6 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _boxexplosion: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1,
     type: 2}
+  _bloodmonster: {fileID: 4000012961768668, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c,
+    type: 2}
 --- !u!135 &135661942307956218
 SphereCollider:
   m_ObjectHideFlags: 1

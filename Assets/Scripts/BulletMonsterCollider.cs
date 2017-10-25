@@ -6,6 +6,7 @@ public class BulletMonsterCollider : MonoBehaviour {
 
 
     public Transform _boxexplosion;
+    public Transform _bloodmonster;
 
     // Use this for initialization
     void Start () {
@@ -23,21 +24,18 @@ public class BulletMonsterCollider : MonoBehaviour {
 
         if (col.gameObject.tag == "monstre")
         {
+
+            Vector3 v = new Vector3(0, 1, 0);
+            Transform _blood = Instantiate(_bloodmonster, transform.position + v, transform.rotation);
+            _blood.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Destroy(gameObject);
-            Destroy(col.gameObject);
+            Destroy(col.gameObject.transform.root);
         }
-
-        if (col.gameObject.tag == "split_monstre")
-        {
-            Destroy(gameObject);
-
-        }
-
         if (col.gameObject.tag == "obstacle")
         {
             Vector3 v =new Vector3(0, 1, 0);
-            Transform explosion = Instantiate(_boxexplosion, transform.position + v, transform.rotation);
-            explosion.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            Transform _explosion = Instantiate(_boxexplosion, transform.position + v, transform.rotation);
+            _explosion.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Destroy(col.gameObject);
             Destroy(gameObject);
 
