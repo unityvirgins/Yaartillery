@@ -37,6 +37,8 @@ public class BulletMonsterCollider : MonoBehaviour {
             Transform _explosion = Instantiate(_boxexplosion, transform.position + v, transform.rotation);
             _explosion.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Destroy(col.gameObject);
+            /*AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();*/
             Destroy(gameObject);
 
         }

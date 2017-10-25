@@ -69,7 +69,10 @@ public class CannonBehavior : MonoBehaviour {
                 clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward * BulletSpeed);
 
                 Transform explosion = Instantiate(_explosion, _bulletSpawner.position, transform.rotation) as Transform;
-              
+
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.Play();
+
             }
            
 

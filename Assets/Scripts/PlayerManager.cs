@@ -133,7 +133,14 @@ public class PlayerManager : MonoBehaviour {
             point_indicator pi = GameObject.FindGameObjectWithTag("canvas1").GetComponent<point_indicator>();
             pi.setLife(0);
             PlayerPrefs.SetInt("life_" + this.transform.root.name, 0);
-                int r = PlayerPrefs.GetInt("round");
+
+            if (PlayerPrefs.GetInt("point_P1") >= 3 || PlayerPrefs.GetInt("point_P2") >= 3)
+            {
+                PlayerPrefs.DeleteAll();
+                _lvl_name = "EndOfParty";
+            }
+
+            int r = PlayerPrefs.GetInt("round");
                 if(r >= 5)
                 {
                     PlayerPrefs.DeleteAll();

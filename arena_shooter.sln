@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arena_shooter", "arena_shooter.csproj", "{91C93D09-CD42-47C9-E25E-B5B69530E23C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arena_shooter.Plugins", "arena_shooter.Plugins.csproj", "{31AC8A0F-7D38-0BD9-8F45-EF4A788809F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arena_shooter.Editor", "arena_shooter.Editor.csproj", "{203F52B6-52A5-33CD-8F49-7012A72B2B3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91C93D09-CD42-47C9-E25E-B5B69530E23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C93D09-CD42-47C9-E25E-B5B69530E23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C93D09-CD42-47C9-E25E-B5B69530E23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C93D09-CD42-47C9-E25E-B5B69530E23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AC8A0F-7D38-0BD9-8F45-EF4A788809F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AC8A0F-7D38-0BD9-8F45-EF4A788809F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AC8A0F-7D38-0BD9-8F45-EF4A788809F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AC8A0F-7D38-0BD9-8F45-EF4A788809F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203F52B6-52A5-33CD-8F49-7012A72B2B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203F52B6-52A5-33CD-8F49-7012A72B2B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203F52B6-52A5-33CD-8F49-7012A72B2B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203F52B6-52A5-33CD-8F49-7012A72B2B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

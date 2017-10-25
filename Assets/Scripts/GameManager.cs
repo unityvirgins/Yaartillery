@@ -83,6 +83,8 @@ public class GameManager : MonoBehaviour {
         MeshRenderer render = player.gameObject.GetComponentInChildren<MeshRenderer>();
         render.enabled = false;
         //gm.StartCoroutine(gm.RespawnPlayer());
+        AudioSource audio = gm.GetComponent<AudioSource>();
+        audio.Play();
     }
 
     /*public static void KillEnemy(Enemy enemy)
