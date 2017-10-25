@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnEnemies : MonoBehaviour {
+public class SpawnEnemies : MonoBehaviour
+{
 
     public GameObject[] enemyList;
     public int[] waveSizeList;
@@ -16,14 +17,16 @@ public class SpawnEnemies : MonoBehaviour {
     protected bool wait = true;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         StartCoroutine(this.SpawnLoop());
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     IEnumerator SpawnLoop()
     {
@@ -59,9 +62,10 @@ public class SpawnEnemies : MonoBehaviour {
         Vector3 position = transform.position;
         Quaternion rotation = Quaternion.Euler(0, waveAngles[waveIndex], 0);
 
-        GameObject enemy = Instantiate(enemyList[index], position, enemyList[index].transform.rotation * rotation * addAngle);
-
+        GameObject enemy = enemyList[index];
         enemy.GetComponent<EnemyBehaviour>().initDir = rotation * addAngle * (new Vector3(1, 0, 0));
 
+        Instantiate(enemyList[index], position, enemyList[index].transform.rotation * rotation * addAngle);
+        
     }
 }

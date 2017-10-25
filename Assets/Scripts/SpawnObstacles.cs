@@ -74,7 +74,7 @@ public class SpawnObstacles : MonoBehaviour
         Vector3 position = transform.position;
         Quaternion rotation = Quaternion.Euler(0, waveAngles[obstacleIndex], 0);
 
-        GameObject enemy = Instantiate(obstacleType, position, obstacleType.transform.rotation * rotation * addAngle); //TODO: Virer le 0
+        GameObject enemy = Instantiate(obstacleType, position, obstacleType.transform.rotation * rotation * addAngle);
 
         enemy.GetComponent<EnemyBehaviour>().initDir = rotation * addAngle * (new Vector3(1, 0, 0));
 

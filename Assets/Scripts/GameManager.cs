@@ -89,4 +89,14 @@ public class GameManager : MonoBehaviour {
     {
         Destroy(enemy.gameObject);
     }*/
+
+    public int getRoundNumber()
+    {
+        if (PlayerPrefs.HasKey("round"))
+        {
+            return PlayerPrefs.GetInt("round");
+        }
+        else
+            return 0;
+    }
 }
