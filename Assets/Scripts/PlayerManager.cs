@@ -134,14 +134,18 @@ public class PlayerManager : MonoBehaviour {
             pi.setLife(0);
             PlayerPrefs.SetInt("life_" + this.transform.root.name, 0);
 
-            if (PlayerPrefs.GetInt("point_P1") >= 3 || PlayerPrefs.GetInt("point_P2") >= 3)
+            int sc_p1 = PlayerPrefs.GetInt("point_P1");
+            int sc_p2 = PlayerPrefs.GetInt("point_P2");
+            if (sc_p1 >= 3 || sc_p2 >= 3)
             {
                 PlayerPrefs.DeleteAll();
                 _lvl_name = "EndOfParty";
+                StartCoroutine(ChangeLvl());
             }
-
-            int r = PlayerPrefs.GetInt("round");
-                if(r >= 5)
+            else
+            {
+                int r = PlayerPrefs.GetInt("round");
+                if (r >= 5)
                 {
                     PlayerPrefs.DeleteAll();
                     _lvl_name = "EndOfParty";
@@ -152,6 +156,7 @@ public class PlayerManager : MonoBehaviour {
                     _lvl_name = "EndRound";
                     StartCoroutine(ChangeLvl());
                 }
+            }
             
         }
         else if (healthCheck > 0)
