@@ -7285,6 +7285,11 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23644768784985060, guid: fc6a6d9263628a0439f69d5de7ddad4f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1872d35114e0a1f448cd6b5b3e2f3540, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
   m_IsPrefabParent: 0
@@ -14820,6 +14825,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.0015
       objectReference: {fileID: 0}
+    - target: {fileID: 23644768784985060, guid: fc6a6d9263628a0439f69d5de7ddad4f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6de7e20f116a8414f9c179052cbfd34f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
   m_IsPrefabParent: 0
