@@ -10,6 +10,9 @@ TagManager:
   - GM
   - canvas1
   - SM
+  - monster
+  - Undefined
+  - cannon_ball
   layers:
   - Default
   - TransparentFX
