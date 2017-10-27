@@ -85,6 +85,8 @@ public class GameManager : MonoBehaviour {
         Debug.Log("mort de " + player.transform.root.name);
         MeshRenderer render = player.gameObject.GetComponentInChildren<MeshRenderer>();
         render.enabled = false;
+        CapsuleCollider caps = player.gameObject.GetComponentInChildren<CapsuleCollider>();
+        caps.enabled = false;
         //gm.StartCoroutine(gm.RespawnPlayer());
         
     }
