@@ -36,6 +36,10 @@ public class PlayerManager : MonoBehaviour {
         if (ps.life <= 0)
         {
             PlayerPrefs.SetInt("life_" + this.transform.root.name, 0);
+
+            AudioSource audio = GameManager.gm.GetComponent<AudioSource>();
+            audio.Play();
+
             GameManager.KillPlayer(this);
             Vector3 v = new Vector3(0, 1, 0);
             Instantiate(Death_player_Explosion, transform.position + v, transform.rotation);

@@ -25,6 +25,9 @@ public class BulletMonsterCollider : MonoBehaviour {
         if (col.gameObject.tag == "monster")
         {
 
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+
             Vector3 v = new Vector3(0, 1, 0);
             Transform _blood = Instantiate(_bloodmonster, transform.position + v, transform.rotation);
             _blood.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
@@ -33,12 +36,13 @@ public class BulletMonsterCollider : MonoBehaviour {
         }
         if (col.gameObject.tag == "obstacle")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+
             Vector3 v =new Vector3(0, 1, 0);
             Transform _explosion = Instantiate(_boxexplosion, transform.position + v, transform.rotation);
             _explosion.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Destroy(col.gameObject);
-            /*AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();*/
             Destroy(gameObject);
 
         }
