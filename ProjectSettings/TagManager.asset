@@ -9,6 +9,7 @@ TagManager:
   - obstacle
   - GM
   - canvas1
+  - SM
   layers:
   - Default
   - TransparentFX

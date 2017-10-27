@@ -79,12 +79,14 @@ public class GameManager : MonoBehaviour {
 
     public static void KillPlayer(PlayerManager player)
     {
+        AudioSource audio = gm.GetComponent<AudioSource>();
+        audio.Play();
+
         Debug.Log("mort de " + player.transform.root.name);
         MeshRenderer render = player.gameObject.GetComponentInChildren<MeshRenderer>();
         render.enabled = false;
         //gm.StartCoroutine(gm.RespawnPlayer());
-        AudioSource audio = gm.GetComponent<AudioSource>();
-        audio.Play();
+        
     }
 
     /*public static void KillEnemy(Enemy enemy)

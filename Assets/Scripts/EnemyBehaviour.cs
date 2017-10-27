@@ -87,7 +87,9 @@ public class EnemyBehaviour : MonoBehaviour
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
-        int targetIndex = Random.Range(0, players.Length);
+        int targetIndex = Random.Range(2, players.Length);
+
+        Vector3 upwards = new Vector3(0, 1, 0);
 
         while (transform.position != initDir)
         {
@@ -99,7 +101,10 @@ public class EnemyBehaviour : MonoBehaviour
         {
             Vector3 target = players[targetIndex].transform.position;
             transform.position = Vector3.MoveTowards(transform.position, target, 0.01f * initSpeed);
-            transform.LookAt(target);
+            //transform.LookAt(target);
+
+            Vector3 lookingAt = Vector3.Cross(target, upwards);
+            transform.rotation = Quaternion.LookRotation(lookingAt, upwards);
 
             yield return null;
         }
