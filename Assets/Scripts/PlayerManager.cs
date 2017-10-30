@@ -128,12 +128,18 @@ public class PlayerManager : MonoBehaviour {
     //dégats de vie
     public void damageHealth()
     {
+        bool endRound = GameManager.gm.endRound;
         int healthCheck = PlayerPrefs.GetInt("life_" + this.transform.root.name);
         if (healthCheck <= 0)
         {
             //ps.Hp = 0;
             Debug.Log("The player is dead");
-            addPoint();
+            if (!endRound)
+            {
+                addPoint();
+                GameManager.gm.endRound = true;
+            }
+                
             point_indicator pi = GameObject.FindGameObjectWithTag("canvas1").GetComponent<point_indicator>();
             pi.setLife(0);
             PlayerPrefs.SetInt("life_" + this.transform.root.name, 0);

@@ -7574,7 +7574,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4319899149504810, guid: 8062ad2ba4457414f8573759ff9495ac, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4319899149504810, guid: 8062ad2ba4457414f8573759ff9495ac, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8466,6 +8466,10 @@ Prefab:
         type: 2}
       propertyPath: m_Parameters.widthMultiplier
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468959021058962, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
@@ -15530,6 +15534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79c36dd9c9fdaf47a7865bd65c33e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endRound: 0
 --- !u!4 &1516221479
 Transform:
   m_ObjectHideFlags: 0
@@ -16317,6 +16322,10 @@ Prefab:
         type: 2}
       propertyPath: m_Parameters.colorGradient.key1.g
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468959021058962, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc6a6d9263628a0439f69d5de7ddad4f, type: 2}

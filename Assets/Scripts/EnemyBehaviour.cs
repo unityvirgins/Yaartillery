@@ -87,7 +87,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
-        int targetIndex = Random.Range(2, players.Length);
+        int targetIndex = Random.Range(0, players.Length);
 
         Vector3 upwards = new Vector3(0, 1, 0);
 

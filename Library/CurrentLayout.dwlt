@@ -20,7 +20,11 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 392}
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +49,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 9
+=======
+  controlID: 62
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -88,7 +96,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 378
+<<<<<<< HEAD
     height: 590
+=======
+    height: 646
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -142,8 +154,13 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
+<<<<<<< HEAD
     height: 1026
   m_MinSize: {x: 950, y: 300}
+=======
+    height: 1118
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -209,7 +226,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 342}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 10
+=======
+  controlID: 63
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +254,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 11
+=======
+  controlID: 64
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +276,11 @@ MonoBehaviour:
     x: 378
     y: 0
     width: 1152
+<<<<<<< HEAD
     height: 590
+=======
+    height: 646
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -334,10 +363,17 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\Yacine\Documents\gamagora\arena_shooter
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 276}
     m_SelectedIDs: 9a290000
     m_LastClickedID: 10650
     m_ExpandedIDs: 00000000d42700003a2800004a280000c8290000102a0000142a0000ac2a0000302b00003c2b00004a2b00006e2c00009c2d00009e2d0000a02d0000a22d0000a42d0000a62d0000a82d0000aa2d0000ac2d0000ae2d0000b02d0000b22d0000b42d0000b62d0000b82d0000ba2d0000bc2d0000be2d0000c02d0000c22d0000c42d0000c62d0000c82d0000ca2d000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f2270000
+    m_LastClickedID: 10226
+    m_ExpandedIDs: 00000000462600008e2a000000ca9a3bffffff7f
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -353,7 +389,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -365,7 +401,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d42700003a280000c8290000102a0000142a0000ac2a0000302b00003c2b00004a2b00006e2c00009c2d00009e2d0000a02d0000a22d0000a42d0000a62d0000a82d0000aa2d0000ac2d0000ae2d0000b02d0000b22d0000b42d0000b62d0000b82d0000ba2d0000bc2d0000be2d0000c02d0000c22d0000c42d0000c62d0000c82d0000ca2d0000
+=======
+    m_ExpandedIDs: 0000000046260000
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,9 +521,15 @@ MonoBehaviour:
     height: 569
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: ba290000
     m_LastClickedID: 0
     m_ExpandedIDs: 52fafdff4a11feff128afeffd0e7feffa82dffff162fffff66f1ffff9efbffff000000001c2e0000482e00003830000084510000
+=======
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: e419fbff5a1afbff7c1bfbff821bfbff8a1bfbff8e1bfbffa01bfbff8ec7fcff14c8fcff36c9fcff3cc9fcff44c9fcff48c9fcff5ac9fcff7c18fdffce21fdff1c58fdff8c5dfdff8e1efeff6871ffff1afcffff00000000a48600002a870000
+>>>>>>> 78f9850f7451325548ec271d13a7de1be2a4c079
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
