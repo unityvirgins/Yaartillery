@@ -202,14 +202,17 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    <Reference Include="Facebook.Unity">
+      <HintPath>Library\FacebookSDK\Facebook.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    <Reference Include="Facebook.Unity.Arcade">
+      <HintPath>Library\FacebookSDK\Facebook.Unity.Arcade.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookNamedPipeClient">
+      <HintPath>Library\FacebookSDK\FacebookNamedPipeClient.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -237,6 +240,8 @@
     <Compile Include="Assets\Scripts\CannonBehavior.cs" />
     <Compile Include="Assets\Scripts\ChangeMusicVolume.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\endPartyScript.cs" />
+    <Compile Include="Assets\Scripts\endRoundScript.cs" />
     <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\ExampleClass.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

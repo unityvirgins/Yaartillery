@@ -143,6 +143,15 @@ public class PlayerManager : MonoBehaviour {
             if (sc_p1 >= 3 || sc_p2 >= 3)
             {
                 PlayerPrefs.DeleteAll();
+                if (sc_p1 > sc_p2)
+                {
+                    PlayerPrefs.SetString("winner", "player_1");
+                }
+                else
+                {
+                    PlayerPrefs.SetString("winner", "player_2");
+                }
+                
                 _lvl_name = "EndOfParty";
                 StartCoroutine(ChangeLvl());
             }
@@ -152,6 +161,15 @@ public class PlayerManager : MonoBehaviour {
                 if (r >= 5)
                 {
                     PlayerPrefs.DeleteAll();
+                    if (sc_p1 > sc_p2)
+                    {
+                        PlayerPrefs.SetString("winner", "player_1");
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetString("winner", "player_2");
+                    }
+                    
                     _lvl_name = "EndOfParty";
                     StartCoroutine(ChangeLvl());
                 }
