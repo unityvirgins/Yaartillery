@@ -18,15 +18,12 @@ public class BulletMonsterCollider : MonoBehaviour {
 		
 	}*/
 
-    //collision bullet monstre
+    //collision boullet vs monstre/obstacle
     private void OnTriggerEnter(Collider col)
     {
 
         if (col.gameObject.tag == "monster")
         {
-
-            /*AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();*/
 
             Vector3 v = new Vector3(0, 1, 0);
             Transform _blood = Instantiate(_bloodmonster, transform.position + v, transform.rotation);
@@ -36,8 +33,6 @@ public class BulletMonsterCollider : MonoBehaviour {
         }
         if (col.gameObject.tag == "obstacle")
         {
-            /*AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();*/
 
             Vector3 v =new Vector3(0, 1, 0);
             Transform _explosion = Instantiate(_boxexplosion, transform.position + v, transform.rotation);

@@ -14,19 +14,16 @@ public class BasicCollider : MonoBehaviour {
 		
 	}*/
 
-    //collision monstre&boullet joueur
+    //collision monstre&boullet vs joueur
     private void OnTriggerEnter(Collider col)
     {
         
         if (col.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            //Destroy(col.gameObject);
             PlayerManager ps = col.GetComponent<PlayerManager>();
             if (ps != null)
             {
-                //Debug.Log("+1 health");
-                //ps.addHealth();
                 Debug.Log("Collision_joueur" + ps.name);
                 ps.DamagePlayer(1);
             }

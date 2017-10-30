@@ -8,6 +8,7 @@ public class endPartyScript : MonoBehaviour {
     public Image winner;
     public Sprite s_win;
     public Sprite s_win2;
+
     // Use this for initialization
 	void Start () {
 
@@ -25,9 +26,4 @@ public class endPartyScript : MonoBehaviour {
         winner.sprite = isPlayerOneWinner ? s_win : s_win2;
         PlayerPrefs.DeleteAll();
     }
-	
-	/*// Update is called once per frame
-	void Update () {
-		
-	}*/
 }

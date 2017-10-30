@@ -45,9 +45,7 @@ public class GameManager : MonoBehaviour {
             else if(PlayerPrefs.HasKey("point_P" + i))
             {
                 Debug.Log("has point");
-                //point_indicator pi = GameObject.FindGameObjectWithTag("canvas1").GetComponent<point_indicator>();
                 Debug.Log(PlayerPrefs.GetInt("point_P" + i));
-                //pi.setPoint(PlayerPrefs.GetInt("point_P" + i), this.transform.root.name);
                 if (i == 1)
                 {
                     pi.setPoint_P1(PlayerPrefs.GetInt("point_P" + i));
@@ -62,25 +60,8 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    /*public Transform playerPrefab;
-    public Transform spawnPoint;
-    public int spawnDelay = 2;
-    public Transform spawnPrefab;*/
-
-    /*public IEnumerator RespawnPlayer()
-    {
-        yield return new WaitForSeconds(spawnDelay);
-
-        Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        GameObject clone = Instantiate(spawnPrefab, spawnPoint.position, spawnPoint.rotation) as GameObject;
-        Destroy(clone, 3f);
-        GetComponent<AudioSource>().Play();
-    }*/
-
     public static void KillPlayer(PlayerManager player)
     {
-        //AudioSource audio = gm.GetComponent<AudioSource>();
-        //audio.Play();
 
         Debug.Log("mort de " + player.transform.root.name);
         MeshRenderer render = player.gameObject.GetComponentInChildren<MeshRenderer>();
@@ -96,14 +77,8 @@ public class GameManager : MonoBehaviour {
         CannonBehavior cb = player.gameObject.transform.GetChild(0).GetComponent<CannonBehavior>();
         cb.canShoot = false;
 
-        //gm.StartCoroutine(gm.RespawnPlayer());
 
     }
-
-    /*public static void KillEnemy(Enemy enemy)
-    {
-        Destroy(enemy.gameObject);
-    }*/
 
     public int getRoundNumber()
     {
