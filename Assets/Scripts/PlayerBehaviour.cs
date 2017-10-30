@@ -37,9 +37,11 @@ public class PlayerBehaviour : MonoBehaviour {
 
         if (_isColliding)
         {
-            float direction = (_moveHorizontal < 0) ? -1 : 1;
-            if (_moveHorizontal == 0)
-                direction = -_otherPlayerDirection;
+            //float direction = (_moveHorizontal < 0) ? -1 : 1;
+            //if (_moveHorizontal == 0)
+            float direction = -_otherPlayerDirection;
+            if(_otherPlayerDirection == 0)
+                direction = (_moveHorizontal < 0) ? -1 : 1;
             newTheta = (-_cc_angle * direction) + _theta;
             _isColliding = false;
             _collided = true;

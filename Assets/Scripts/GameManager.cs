@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager gm;
-    
+    public bool endRound = false;
 
 
     void Awake()
