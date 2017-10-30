@@ -10,6 +10,8 @@ public class CannonBehavior : MonoBehaviour {
     public float theta = 0;
     public float _rotating_speed;
     public float _fire_rate;
+    public bool canShoot = false;
+    public float startTime = 2;
 
     private string _axis_name;
     PlayerBehaviour _playerBehaviour;
@@ -36,7 +38,7 @@ public class CannonBehavior : MonoBehaviour {
         _blackberd_behaviour = transform.parent.GetComponent<BlackperlBehaviour>();
         _axis_name = _playerBehaviour._Vertical_axis_name;
         _fire_button = _playerBehaviour.fire_button;
-        
+        StartCoroutine(enableCanon());
     }
 
     // Update is called once per frame
@@ -54,7 +56,7 @@ public class CannonBehavior : MonoBehaviour {
         
 
         // Put this in your update function
-        if (Input.GetButtonDown(_fire_button))
+        if (Input.GetButtonDown(_fire_button) && canShoot)
         {
             
 
@@ -100,6 +102,12 @@ public class CannonBehavior : MonoBehaviour {
             factor = 1;
             
         }
+    }
+
+    IEnumerator enableCanon()
+    {
+        yield return new WaitForSeconds(startTime);
+        canShoot = true;
     }
     /*
 void RotateToMouse() {
