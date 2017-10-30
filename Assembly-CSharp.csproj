@@ -69,6 +69,8 @@
      <Compile Include="Assets\Scripts\CannonBehavior.cs" />
      <Compile Include="Assets\Scripts\ChangeMusicVolume.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\endPartyScript.cs" />
+     <Compile Include="Assets\Scripts\endRoundScript.cs" />
      <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\ExampleClass.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -91,6 +93,9 @@
      <None Include="Assets\Explosion\Explosion.shader" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Explosion\README.txt" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>D:/Projects/Unity/Yaar/Yaartillery/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
