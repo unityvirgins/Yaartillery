@@ -85,10 +85,19 @@ public class GameManager : MonoBehaviour {
         Debug.Log("mort de " + player.transform.root.name);
         MeshRenderer render = player.gameObject.GetComponentInChildren<MeshRenderer>();
         render.enabled = false;
+        foreach (Transform child in player.gameObject.transform.GetChild(0))
+        {
+            if(child.GetComponent<Renderer>())
+                child.GetComponent<Renderer>().enabled = false;
+        }
         CapsuleCollider caps = player.gameObject.GetComponentInChildren<CapsuleCollider>();
         caps.enabled = false;
+
+        CannonBehavior cb = player.gameObject.transform.GetChild(0).GetComponent<CannonBehavior>();
+        cb.canShoot = false;
+
         //gm.StartCoroutine(gm.RespawnPlayer());
-        
+
     }
 
     /*public static void KillEnemy(Enemy enemy)
