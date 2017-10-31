@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class endRoundScript : MonoBehaviour {
 
@@ -17,8 +18,9 @@ public class endRoundScript : MonoBehaviour {
         point_P2.text = PlayerPrefs.GetInt("point_P2").ToString();
     }
 	
-	/*// Update is called once per frame
+	// Update is called once per frame
 	void Update () {
-		
-	}*/
+        if (Input.GetButtonDown("Fire1"))
+            SceneManager.LoadScene("main_scene");
+    }
 }

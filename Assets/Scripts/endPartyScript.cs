@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class endPartyScript : MonoBehaviour {
 
@@ -25,5 +26,11 @@ public class endPartyScript : MonoBehaviour {
         }
         winner.sprite = isPlayerOneWinner ? s_win : s_win2;
         PlayerPrefs.DeleteAll();
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+            SceneManager.LoadScene("mainMenu");
     }
 }
